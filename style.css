@@ -135,6 +135,7 @@ body {
     rgb(245, 245, 245) 61%,
     rgb(255, 255, 255) 99%
   );
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -183,6 +184,7 @@ body {
     rgb(245, 245, 245) 61%,
     rgb(255, 255, 255) 99%
   );
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   filter: drop-shadow(-2px 10px 16px #121212e8);
@@ -325,8 +327,8 @@ body {
 }
 
 .logo svg:hover {
-  background-color: #ffffff;
-  box-shadow: 0px 4px 12px #ffffff9d;
+  background-color: #cfff72;
+  box-shadow: 0px 4px 12px #d0ff72bd;
   padding: 7px;
   cursor: pointer;
 }
@@ -409,8 +411,8 @@ body {
 }
 
 .nav-link.active {
-  color: #fafafa;
-  background-color: #ffffff25;
+  color: #cfff72;
+  
 }
 
 /* Hamburger Icon */
@@ -564,7 +566,7 @@ body {
           height: 56px;
           justify-content: flex-start;
           padding: 0 20px;
-          font-size: 1.1rem;
+          font-size: 1rem;
           border-radius: 12px;
         }
 
@@ -585,7 +587,7 @@ body {
 }
 
 .section {
-  background-color: #393939;
+  background-color: #121212;
   width: 100%;
   display: flex;
   align-items: center;
@@ -1116,3 +1118,200 @@ img {
     margin-right: -12px;
   }
 }
+
+#contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: fit-content;
+  padding-top: 12vh;
+  padding-bottom: 0;
+  width: 100%;
+  background-color: #121212 !important;
+  gap: 1.6rem;
+}
+
+.contact-section{
+  display: flex;
+  width: 90%;
+  justify-content: center;
+  flex-direction: column;
+  gap: 14px;
+ 
+  align-items: center;
+ 
+}
+.contact-section a{
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: row;
+  gap: .8cqw;
+  transition: all ease-in-out .2s;
+   padding-left: max(20px, 4cqw);
+  
+}
+
+
+
+.contact-section a:hover .ext-arrow
+{
+  margin-block: 0cqw;
+  padding-left: .24cqw;
+  padding-right: 0cqw;
+  transition: all ease-in-out .2s;
+}
+.contact-section a:hover h1
+{
+  color: #cfff75;
+  transition: all ease-in-out .2s;
+  text-decoration: 4px solid #cfff75 underline;
+  text-underline-offset: 2.2cqw;
+}
+
+.contact-section h1 {
+  position: relative;
+  font-family: "Big Shoulders", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2%;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 800;
+  font-size: max(36px, 6cqw);
+  background: -webkit-linear-gradient(
+    94deg,
+    rgb(201, 201, 201) 0%,
+    rgb(208, 208, 208) 21%,
+    rgb(245, 245, 245) 61%,
+    rgb(255, 255, 255) 99%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: max(3px, .3cqw) solid #cfff75 underline;
+  text-underline-offset: 2cqw;
+}
+
+.contact-section a h1::after
+{
+  opacity: 0.01%;
+  position: absolute;
+  display: flex;
+  content: "cook";
+  padding-inline: .2cqw;
+  text-shadow: 0px 0px 0px #121212;
+  background-color: #cfff75;
+  right: -0.8cqw;
+  top: 0.6cqw;
+  rotate: 0deg;
+  scale: 1.5;
+  transition: opacity 0.1s ease, rotate .2s ease-out, scale .2s ;
+  
+}
+
+.contact-section a:hover h1::after
+{
+  opacity: 100%;
+  rotate: -4deg;
+  scale: 1;
+  transition: opacity 0.1s ease, rotate .2s ease-out, scale .2s  ;
+  
+}
+
+.ext-arrow
+{
+  color: #cfff75;
+  display: flex;
+  width: max(24px, 4cqw);
+  height: auto;
+  transition: all ease-in-out .2s;
+  margin-block: .24cqw;
+  padding-left: 0cqw;
+  padding-right: .24cqw;
+  stroke-width: max(3px, .24cqw);
+}
+
+.socials-links {
+  display: flex;
+  flex-wrap: wrap;
+ justify-content: center;
+  gap: 20px;
+  padding-top: 80px;
+}
+
+.socials-btns {
+  
+  padding: 8px 16px;
+  border-radius: 14px;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #fafafa;
+  transition: all 0.2s ease;
+}
+
+a {
+  text-decoration: none;
+}
+
+.socials-btns:hover {
+  background-color: #cfff72;
+  color: #121212;
+}
+
+.socials-btns svg {
+  stroke-width: 1.5px;
+}
+
+
+
+
+.scene {
+      width: 100%;
+      height: 220px;
+      background: #121212;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* gradient overlay — fades in as sun sets */
+    .scene::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to bottom, #121212 10%, #1a1a1a 100%);
+      opacity: 0.4;
+      transition: opacity 4s ease;
+      pointer-events: none;
+    }
+
+    .scene:hover::before {
+      opacity: 1;
+    }
+
+    /* sun semicircle */
+    .sun {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%) translateY(288px);
+      width: 280px;
+      height: 274px;
+      background: #cfff72;
+      border-radius: 100% 100%;
+      transition: transform .5s cubic-bezier(0.45, 0.05, 0.55, 0.95);
+      box-shadow: 0px -20px 80px #cfff72;
+      display: flex;
+      align-items: start;
+      justify-content: center;
+      padding-top: 50px;
+      color: #6da103;
+      font-weight: 700;
+    }
+
+    .scene:hover .sun {
+      transform: translateX(-50%) translateY(180px);
+    }
