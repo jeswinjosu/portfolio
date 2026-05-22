@@ -1,1 +1,1 @@
-The code underlying this website is licensed under the MIT License. However, all graphics, design elements, case studies, images, and textual content are strictly copyright © [2026] [Jeswin Jose] and may not be used, copied, or reproduced.
+The code underlying this website is licensed under the MIT License. However, all graphics, design elements, case studies, images, and textual content are strictly copyright © 2026 Jeswin Jose and may not be used, copied, or reproduced.
